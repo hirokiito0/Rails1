@@ -5,7 +5,7 @@ class TodolistsController < ApplicationController
   
   def create
     # データの新規登録するためのインスタンス作成
-    list = LIst.new(list_params)
+    list = List.new(list_params)
     # データをデータベースに保存するためのsaveメソッド実行
     list.save
     # トップ画面へリダイレクト
