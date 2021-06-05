@@ -22,6 +22,10 @@ class TodolistsController < ApplicationController
     @list = List.find(params[:id])
   end
   
+  def edit
+    @list = List.find(params[:id])
+  end
+  
   private
   #ストロングパラメーター
   def list_params
